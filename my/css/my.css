@@ -13,6 +13,8 @@
 	.my-dropdown-menu-w ul {
 		padding: 0px;
 		list-style: none;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	.my-dropdown-menu-link {
