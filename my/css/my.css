@@ -4,13 +4,13 @@
 	}
 
 /*DROPDOW MENU*/
-	#my-dropdown-menu-w .my-dropdown-menu-w {
+	#my-dropdown-menu-w.my-dropdown-menu-w {
 		max-width: 1000px;
 		margin: auto;
 		background: white;
 	}
 
-	#my-dropdown-menu-w .my-dropdown-menu-w ul {
+	#my-dropdown-menu-w.my-dropdown-menu-w ul {
 		padding: 0px;
 		list-style: none;
 		margin-left: 0px;
@@ -39,7 +39,7 @@
 	#my-dropdown-menu-w .my-dropdown-menu-link:hover {
 		background: #ccc;
 	}
-	
+
 	#my-dropdown-menu-w .my-dropdown-menu-parent > li:hover .my-dropdowm-menu-lv2 {
 		display: block;
 	}
