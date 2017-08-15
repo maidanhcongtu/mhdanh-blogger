@@ -17,30 +17,30 @@
 		margin-right: 0px;
 	}
 
-	#my-dropdown-menu-w .my-dropdown-menu-link {
+	#my-dropdown-menu-w.my-dropdown-menu-w .my-dropdown-menu-link {
 		padding: 10px;
 		text-decoration: none;
 		display: block;
 		color: #333;
 	}
 
-	#my-dropdown-menu-w .my-dropdowm-menu-lv2 {
+	#my-dropdown-menu-w.my-dropdown-menu-w .my-dropdowm-menu-lv2 {
 		display: none;
 		position: absolute;
 		min-width: 300px;
 		background: white;
 	}
 
-	#my-dropdown-menu-w .my-dropdown-menu-parent > li {
+	#my-dropdown-menu-w.my-dropdown-menu-w .my-dropdown-menu-parent > li {
 		float: left;
 		position: relative;
 	}
 
-	#my-dropdown-menu-w .my-dropdown-menu-link:hover {
+	#my-dropdown-menu-w.my-dropdown-menu-w .my-dropdown-menu-link:hover {
 		background: #ccc;
 	}
 
-	#my-dropdown-menu-w .my-dropdown-menu-parent > li:hover .my-dropdowm-menu-lv2 {
+	#my-dropdown-menu-w.my-dropdown-menu-w .my-dropdown-menu-parent > li:hover .my-dropdowm-menu-lv2 {
 		display: block;
 	}
 /*END DROPDOW MENU*/
