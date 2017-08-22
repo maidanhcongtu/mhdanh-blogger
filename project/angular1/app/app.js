@@ -7,10 +7,10 @@
 		.config(["$routeProvider", function($routeProvider) {
 			$routeProvider
 				.when("/san-pham", {
-					template: "<div>Danh sách sản phẩm</div>",
+					templateUrl: "app/views/san-pham/san-pham-list.html",
 					controller: "ListSanPhamCtrl"
 				}).when("/san-pham/:id", {
-					template: "<div>Sản phẩm chi tiết {{idSanPham}}</div>",
+					templateUrl: "app/views/san-pham/san-pham-detail.html",
 					controller: "SanPhamDetailCtrl"
 				});
 		}]);
