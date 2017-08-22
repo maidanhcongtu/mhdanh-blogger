@@ -145,7 +145,7 @@
   display: inline !important;
 }
 .syntaxhighlighter .toolbar a {
-  display: block !important;
+  display: none !important;
   text-align: center !important;
   text-decoration: none !important;
   padding-top: 1px !important;
