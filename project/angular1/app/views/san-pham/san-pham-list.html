@@ -1,3 +1,7 @@
 <div class="san-pham-list-com">
-	welcome to list san pham view
+	<strong ng-bind="'SAN_PHAM_LIST_TITLE' | translate"></strong>
+	<div ng-bind="'SAN_PHAM_LIST_FOUND' | translate: {'number': 35}"></div>
+	<div ng-bind="'SAN_PHAM_LIST_DESCRIPTION' | translate"></div>
+	<div ng-bind-html="'SAN_PHAM_LIST_DESCRIPTION' | translate"></div>
+	<div ng-bind-html="'SAN_PHAM_LIST_DESCRIPTION_PARAM' | translate : {'html': '<br/>'}"></div>
 </div>

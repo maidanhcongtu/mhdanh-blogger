@@ -1,0 +1,6 @@
+{
+	"SAN_PHAM_LIST_TITLE": "List Product",
+	"SAN_PHAM_LIST_FOUND": "Found {{number}} products",
+	"SAN_PHAM_LIST_DESCRIPTION" : "<strong>Text bold</strong>",
+	"SAN_PHAM_LIST_DESCRIPTION_PARAM" : "<strong>Text bold except param {{html}} format</strong>"
+}

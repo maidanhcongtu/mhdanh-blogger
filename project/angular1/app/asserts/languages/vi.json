@@ -1,0 +1,6 @@
+{
+	"SAN_PHAM_LIST_TITLE": "Danh Sách Sản Phẩm",
+	"SAN_PHAM_LIST_FOUND": "Tìm Thấy {{number}} Sản Phẩm",
+	"SAN_PHAM_LIST_DESCRIPTION" : "<strong>Dữ liệu im đậm</strong>",
+	"SAN_PHAM_LIST_DESCRIPTION_PARAM" : "<strong>Dữ liệu im đậm còn param thì {{html}} giữ nguyên format</strong>"
+}
