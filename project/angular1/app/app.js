@@ -14,12 +14,18 @@
 		}])
 		.config(["$routeProvider", function($routeProvider) {
 			$routeProvider
+				.when("/admin/san-pham", {
+					template: "<div>Chỉ có user với role admin mới truy cập được vào trang này</div>",
+					requireLogin: true,
+					requirePermission: ["admin"]
+				})
 				.when("/san-pham", {
 					templateUrl: "app/views/san-pham/san-pham-list.html",
 					controller: "ListSanPhamCtrl"
 				}).when("/san-pham/:id", {
 					templateUrl: "app/views/san-pham/san-pham-detail.html",
-					controller: "SanPhamDetailCtrl"
+					controller: "SanPhamDetailCtrl",
+					requireLogin: true
 				});
 		}])
 		.config(['$translateProvider', function ($translateProvider) {
@@ -32,8 +38,12 @@
 			$translateProvider.preferredLanguage('vi');
 			$translateProvider.useLocalStorage();
 		}])
-		.run(["$rootScope", "$translate", "$location", function($rootScope, $translate, $location) {
+		.run(["$rootScope", "$translate", "$location", "MyAuth", function($rootScope, $translate, $location, MyAuth) {
 		    $rootScope.$on('$routeChangeStart', function (event, next) {
+
+		    	if(!MyAuth.checkPermission(next)) {
+		    		$location.path("/");
+		    	}
 		    	// find param lang in url
 		    	var param = $location.search();
 		    	if(param.lang != undefined) {
