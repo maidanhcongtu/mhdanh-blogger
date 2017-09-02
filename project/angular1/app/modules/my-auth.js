@@ -8,7 +8,7 @@
 					// dont require login
 					return true;
 				} else {
-					return isLogined() && hasPermission(route.requirePermission);
+					return this.isLogined() && hasPermission(route.requirePermission);
 				}
 			}
 
@@ -22,7 +22,7 @@
 				MyLocalStorage.remove("userLogined");
 			}
 
-			function isLogined() {
+			this.isLogined = function() {
 				// get user that logined from localstorage
 				return JSON.stringify(MyLocalStorage.getObject("userLogined")) != JSON.stringify({});
 			}
