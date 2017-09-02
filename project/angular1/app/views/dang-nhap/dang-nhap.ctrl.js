@@ -8,7 +8,7 @@
 					username: $scope.username,
 					password: $scope.password
 				};
-				$http.post("api/login", user).
+				$http.post("api/login", $.param(user)).
 					then(function(response) {
 						// check response
 						if(response.loginSuccess) {
