@@ -1,0 +1,13 @@
+<div class="ng-my-product">
+	<h3 ng-bind="title"></h3>
+	<a href="" ng-click="onBack()">go back</a>
+	<div ng-repeat="product in products">
+		<label ng-bind="product.name"></label>
+		<label ng-bind="product.price + 'đ'"></label>
+		<a href="" ng-click="showPrice({price: product.price})">show price call back</a>
+		<a href="" ng-click="showProduct({product: product})">show detail</a>
+		<hr/>
+	</div>
+
+	<div ng-transclude></div>
+</div>

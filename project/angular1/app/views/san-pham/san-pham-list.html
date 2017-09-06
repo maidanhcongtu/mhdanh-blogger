@@ -4,4 +4,8 @@
 	<div ng-bind="'SAN_PHAM_LIST_DESCRIPTION' | translate"></div>
 	<div ng-bind-html="'SAN_PHAM_LIST_DESCRIPTION' | translate"></div>
 	<div ng-bind-html="'SAN_PHAM_LIST_DESCRIPTION_PARAM' | translate : {'html': '<br/>'}"></div>
+	<hr/>
+	<myproduct title="Sản Phẩm Chi Tiết" products="products" on-back="onBack()" show-price="showPrice(price)" show-product="showProduct(product)">
+		<label>embed some html into directive
+	</myproduct>
 </div>

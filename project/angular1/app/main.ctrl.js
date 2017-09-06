@@ -5,6 +5,9 @@
 		"User.SanPhamList.Ctrl",
 		"User.DangNhap.Ctrl",
 
+
+		"Directive.MyProduct",
+		
 		"Service.MyAuth",
 		"Service.MyLocalStorage"
 		])
