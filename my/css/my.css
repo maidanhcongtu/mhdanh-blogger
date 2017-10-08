@@ -61,3 +61,29 @@
 		display: block !important;
 	}
 /*END DROPDOW MENU*/
+
+/*MENU RIGHT HIGHLIGHT POST*/
+#my-menu-highligh-post, #my-menu-highligh-post li, #my-menu-highligh-post ul{
+	padding-left: 0px; 
+	list-style: none;
+}
+#my-menu-highligh-post li.collapse ul {
+	display: none;
+}
+#my-menu-highligh-post li.collapse .fa-angle-down:before {
+	content: "\f105";
+}
+#my-menu-highligh-post a {
+	display: block;
+	text-decoration: none;
+}
+#my-menu-highligh-post .my-label-parent {
+	font-weight: bold;
+}
+#my-menu-highligh-post .my-child-menu a{
+	padding: 3px 5px 5px 15px;
+}
+#my-menu-highligh-post .my-child-menu a:hover{
+	background: #e3e3e3;
+}
+/*END MENU RIGHTHIGHLIGHT POST*/

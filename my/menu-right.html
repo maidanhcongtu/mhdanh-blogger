@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test me</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+</head>
+<body>
+	<ul id="my-menu-highligh-post">
+		<li>
+			<a href="" class="my-label-parent"><i class="fa fa-angle-down" aria-hidden="true"></i> Angular</a>
+			<ul class="my-child-menu">
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+			</ul>
+		</li>
+		<li class="collapse">
+			<a href="" class="my-label-parent"><i class="fa fa-angle-down" aria-hidden="true"></i> Angular</a>
+			<ul class="my-child-menu">
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+				<li><a href="">again</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script>
+		$(document).ready(function(){
+			console.log("ok man");
+			$(".my-label-parent").on("click", function(e){
+				if($(this).closest("li").hasClass("collapse")) {
+					$(this).closest("li").removeClass("collapse");
+				} else {
+					$(this).closest("li").addClass("collapse");
+				}
+				e.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
