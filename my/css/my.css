@@ -81,7 +81,11 @@
 	font-weight: bold;
 }
 #my-menu-highligh-post .my-child-menu a{
-	padding: 3px 5px 5px 15px;
+	padding: 3px 3px 3px 15px;
+}
+#my-menu-highligh-post .my-child-menu li {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 #my-menu-highligh-post .my-child-menu a:hover{
 	background: #e3e3e3;
